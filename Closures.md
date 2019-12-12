@@ -2,7 +2,7 @@
 ## is Old Again
 
 A Brief History of Time <br/>
-(with Javascript Closures) 
+(with Javascript Closures)
 
 Wilmington JS - Aug 21, 2018
 
@@ -62,7 +62,7 @@ _closed_ expression (one with no free variables):
 
 The `onload` right hand side is a Javascript function body.
 
-`document` is a _free_ variable 
+`document` is a _free_ variable
 within that function body.
 `document` is _bound_ outside of
 the function, but available in
@@ -95,7 +95,7 @@ that requires _three_ arguments?
 function getStatusText( node ) {
    var text = '';
    var isAriaHidden = node.getAttribute( 'aria-hidden' );
-   var isDisplayHidden = 
+   var isDisplayHidden =
        window.getComputedStyle( node )['display'] === 'none';
    if ( isAriaHidden !== 'true' && !isDisplayHidden ) {
      toArray( node.childNodes ).forEach(
@@ -116,7 +116,7 @@ function getStatusText( node ) {
 
 --------
 
-# ... But JS is far from the _first_ 
+# ... But JS is far from the _first_
 
 ========
 
@@ -130,7 +130,7 @@ function getStatusText( node ) {
 
 --------
 
-## First, Some Historical Context
+## First, Some Hysterical Context
 
 ![Let's Get Small](lambda/lgs.jpeg) <!-- .element: class="fragment" -->
 
@@ -143,7 +143,7 @@ function getStatusText( node ) {
 
 --------
 
-"Closure" coined by Peter J. Landin in  1964 
+"Closure" coined by Peter J. Landin in  1964
 
 ========
 
@@ -180,7 +180,7 @@ Neil Gafter, [_A Definition of Closures_](http://gafter.blogspot.com/2007/01/def
 
 # Scheme
 
-First languages to adopt closures, 1975
+First language to adopt closures, 1975
 
 _Revised<sup>3</sup> Report on the Algorithmic Language Scheme_
 
@@ -274,7 +274,7 @@ pure functions.
 --------
 
 <code>
-<pre> 
+<pre>
  &lt;expression&gt; := &lt;name&gt; | &lt;function&gt; | &lt;application&gt;
    &lt;function&gt; := &lambda; &lt;name&gt;.&lt;expression&gt;
 &lt;application&gt; := &lt;expression&gt;&lt;expression&gt;
@@ -317,4 +317,3 @@ and logic functions can be defined in a purely function-based model
 ![History of Programming Languages](lambda/hopl.jpg)
 
 Those who remember [the best of] the past of programming languages are _fortunate_ to repeat it.
-
